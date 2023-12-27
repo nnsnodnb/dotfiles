@@ -5,7 +5,6 @@ include_cookbook 'functions'
 
 # Homebrew
 include_cookbook 'actionlint'
-include_cookbook 'anyenv'
 include_cookbook 'appicon'
 include_cookbook 'bat'
 include_cookbook 'circleci'
@@ -37,6 +36,7 @@ include_cookbook 'provisionql'
 include_cookbook 'slack'
 
 # Anyenv
+include_cookbook 'anyenv'
 include_cookbook 'nodenv'
 include_cookbook 'pyenv'
 include_cookbook 'rbenv'
