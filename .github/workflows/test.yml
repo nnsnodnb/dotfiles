@@ -21,4 +21,4 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Dry run
-      run: ./setup.sh -n
+      run: ./setup.sh -n --node-json nodes/github-actions.json
