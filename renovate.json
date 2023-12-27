@@ -16,5 +16,18 @@
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
     }
+  ],
+  "packageRules": [
+    {
+      "groupName": "itamae & mitamae",
+      "matchPackageNames": [
+        "itamae",
+        "mitamae"
+      ],
+      "matchManagers": [
+        "bundler",
+        "custom.regex"
+      ]
+    }
   ]
 }
