@@ -1,5 +1,7 @@
 include_cookbook 'homebrew'
 
+include_cookbook 'zshrc'
+
 # Function
 include_cookbook 'functions'
 
