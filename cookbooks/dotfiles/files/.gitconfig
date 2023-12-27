@@ -1,0 +1,36 @@
+[gpg]
+	format = ssh
+[user]
+	name = nnsnodnb
+	email = nnsnodnb@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDaNAt5lmfKeJiHy8pGUH+7SPRUWQ1oqLngByaFbSF2l
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = /Users/nnsnodnb/.gitignore_global
+	ignorecase = false
+[color]
+	ui = true
+[alias]
+	co = "commit -S"
+    bnow = "rev-parse --abbrev-ref HEAD"
+    gnow = !git bnow | tr -d '\n' | pbcopy
+    fe = "fetch -ap"
+    hard = "reset --hard"
+    amend = "commit -S --amend"
+    st = "status"
+    ps = !git push -u origin `git bnow`
+    revert = "revert -S"
+[init]
+    defaultBranch = main
+[gitflow "branch"]
+    master = main
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[commit]
+	template = /Users/nnsnodnb/.stCommitMsg
+	gpgsign = true
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[rebase]
+	autoStash = true
