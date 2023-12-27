@@ -17,7 +17,7 @@ end
 define :anyenv do
   name = params[:name]
 
-  execute "/bin/bash -lc 'anyenv install #{name}'" do
+  execute "/bin/bash -lc \"$(brew --prefix)/bin/anyenv install #{name}\"" do
     not_if "test -d /Users/#{node[:user]}/.anyenv/envs/#{name}"
   end
 end
