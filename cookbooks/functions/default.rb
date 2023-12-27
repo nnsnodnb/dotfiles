@@ -14,6 +14,13 @@ define :cask do
   end
 end
 
+define :tap do
+  execute "brew tap #{params[:name]}" do
+    user, repository = params[:name].split('/')
+    not_if "test -d /opt/homebrew/Library/Taps/#{user}/homebrew-#{repository}"
+  end
+end
+
 define :anyenv do
   name = params[:name]
 
