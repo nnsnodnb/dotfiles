@@ -1,5 +1,8 @@
 include_cookbook 'homebrew'
 
+# Dotfiles
+include_cookbook 'dotfiles'
+
 # Zsh
 include_cookbook 'zprezto'
 include_cookbook 'zshrc'
