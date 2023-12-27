@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "bin/install_mitamae.sh"
+      ],
+      "matchStrings": [
+        "mitamae_version=\"(?<currentValue>.*?)\""
+      ],
+      "depNameTemplate": "itamae-kitchen/mitamae",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    }
+  ]
+}
