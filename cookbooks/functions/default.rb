@@ -17,7 +17,7 @@ end
 define :anyenv do
   name = params[:name]
 
-  execute "anyenv install #{name}" do
+  execute "/bin/bash -lc 'anyenv install #{name}'" do
     not_if "test -d #{ENV["HOME"]}/.anyenv/envs/#{name}"
   end
 end
