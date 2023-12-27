@@ -1,1 +1,1 @@
-brew 'appicon'
+brew 'Nonchalant/appicon/appicon'
