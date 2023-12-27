@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: ["12", "13"]
+
+    runs-on: macos-${{ matrix.os }}
+
+    name: Dry run on macOS ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Dry run
+      run: ./setup.sh

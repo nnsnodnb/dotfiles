@@ -1,0 +1,2 @@
+bin/*
+!bin/install_mitamae.sh
