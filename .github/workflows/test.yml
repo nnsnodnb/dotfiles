@@ -15,10 +15,10 @@ jobs:
 
     runs-on: macos-${{ matrix.os }}
 
-    name: Dry run on macOS ${{ matrix.os }}
+    name: Test on macOS ${{ matrix.os }}
 
     steps:
     - uses: actions/checkout@v4
 
-    - name: Dry run
-      run: ./setup.sh -n --node-json nodes/github-actions.json
+    - name: Test run
+      run: ./setup.sh --node-json nodes/github-actions.json
