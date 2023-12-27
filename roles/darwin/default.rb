@@ -1,5 +1,7 @@
 include_cookbook 'homebrew'
 
+# Zsh
+include_cookbook 'zprezto'
 include_cookbook 'zshrc'
 
 # Function
