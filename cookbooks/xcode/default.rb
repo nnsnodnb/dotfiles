@@ -4,6 +4,6 @@ execute 'Download Xcode.xip' do
 end
 
 execute 'Unzip Xcode.xip' do
-  comamand 'xip -x /tmp/Xcode.xip -C /Applications && rm /tmp/Xcode.xip'
+  command 'xip -x /tmp/Xcode.xip -C /Applications && rm /tmp/Xcode.xip'
   only_if 'test -f /tmp/Xcode.xip'
 end
