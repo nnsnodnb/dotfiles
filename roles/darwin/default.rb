@@ -53,3 +53,6 @@ include_cookbook 'nodenv'
 include_cookbook 'pyenv'
 include_cookbook 'rbenv'
 include_cookbook 'tfenv'
+
+# Xcode
+include_cookbook 'xcode'
