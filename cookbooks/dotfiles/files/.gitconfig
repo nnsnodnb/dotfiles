@@ -18,7 +18,7 @@
     hard = "reset --hard"
     amend = "commit -S --amend"
     st = "status"
-    ps = !git push -u origin `git bnow`
+    ps = "push"
     revert = "revert -S"
 [init]
     defaultBranch = main
@@ -34,3 +34,5 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [rebase]
 	autoStash = true
+[push]
+	autoSetupRemote = true
