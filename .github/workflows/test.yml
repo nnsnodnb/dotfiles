@@ -19,7 +19,7 @@ jobs:
   test:
     strategy:
       matrix:
-        os: ["12", "13"]
+        os: ["13", "14"]
 
     runs-on: macos-${{ matrix.os }}
 
@@ -29,4 +29,4 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Test run
-      run: ./setup.sh --node-json nodes/github-actions.json
+      run: ./setup.sh -n --node-json nodes/github-actions.json
