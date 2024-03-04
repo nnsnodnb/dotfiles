@@ -4,7 +4,7 @@ Only macOS provisioning tool.
 
 ## Environments
 
-- macOS 12.x and 13.x
+- macOS 13.x and 14.x
 - mitamae
 
 ## Run
