@@ -1,6 +1,6 @@
 if node[:user] != 'runner'
   execute 'Download Xcode.xip' do
-    command "curl -o /tmp/Xcode.xip https://download.developer.apple.com/Developer_Tools/Xcode_15.1/Xcode_15.1.xip"
+    command "curl -o /tmp/Xcode.xip https://download.developer.apple.com/Developer_Tools/Xcode_15.3/Xcode_15.3.xip"
     not_if 'ls /Applications | grep -E \'^Xcode(_)?(\d)*(\..*)?(beta)?(\d)?\.app$\''
   end
 
