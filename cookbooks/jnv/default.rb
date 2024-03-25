@@ -1,0 +1,1 @@
+brew 'ynqa/tap/jnv'
