@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gem "itamae", "~> 1.14.1"
+gem "itamae", "~> 1.15.0"
