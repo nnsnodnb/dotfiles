@@ -19,13 +19,12 @@ jobs:
   test:
     strategy:
       matrix:
-        os: ["13", "14"]
+        os: ["macos-26", "xcode-27"]
 
-    runs-on: macos-${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
 
-    name: Test on macOS ${{ matrix.os }}
+    name: Test on ${{ matrix.os }}
 
-    steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
     - name: Test run
