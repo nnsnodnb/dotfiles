@@ -6,8 +6,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "bin/install_mitamae.sh"
+      "managerFilePatterns": [
+        "/bin/install_mitamae.sh/"
       ],
       "matchStrings": [
         "mitamae_version=\"(?<currentValue>.*?)\""
