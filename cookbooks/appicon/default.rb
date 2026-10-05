@@ -1,1 +1,0 @@
-brew 'Nonchalant/appicon/appicon'

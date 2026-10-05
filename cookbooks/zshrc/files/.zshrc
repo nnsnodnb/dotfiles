@@ -27,18 +27,6 @@ if [[ -s "${ZPLUG_HOME}/init.zsh" ]]; then
   source "${ZPLUG_HOME}/init.zsh"
 fi
 
-# ngrok
-if command -v ngrok &>/dev/null; then
-  eval "$(ngrok completion)"
-fi
-
-# pipx
-if command -v pipx &>/dev/null; then
-  autoload -U bashcompinit
-  bashcompinit
-  eval "$(register-python-argcomplete pipx)"
-fi
-
 # Alias
 alias reload="source ~/.zshrc"
 
