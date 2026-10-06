@@ -27,6 +27,12 @@ if [[ -s "${ZPLUG_HOME}/init.zsh" ]]; then
   source "${ZPLUG_HOME}/init.zsh"
 fi
 
+# uv
+source "${HOME}/.local/bin/env"
+if command -v uv &>/dev/null; then
+  eval "$(uv generate-shell-completion zsh)"
+fi
+
 # Alias
 alias reload="source ~/.zshrc"
 
