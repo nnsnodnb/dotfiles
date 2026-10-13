@@ -1,1 +1,1 @@
-brew 'actionlint'
+cask 'kjanat/tap/actionlint'
