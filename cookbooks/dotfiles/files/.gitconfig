@@ -2,7 +2,7 @@
 	format = ssh
 [user]
 	name = nnsnodnb
-	email = nnsnodnb@gmail.com
+	email = 9856514+nnsnodnb@users.noreply.github.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDaNAt5lmfKeJiHy8pGUH+7SPRUWQ1oqLngByaFbSF2l
 [core]
 	editor = vim -c \"set fenc=utf-8\"
@@ -16,6 +16,7 @@
     gnow = !git bnow | tr -d '\n' | pbcopy
     fe = "fetch -ap"
     hard = "reset --hard"
+    soft = "reset --soft"
     amend = "commit -S --amend"
     st = "status"
     ps = "push"
