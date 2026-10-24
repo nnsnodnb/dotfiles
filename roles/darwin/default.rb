@@ -61,8 +61,8 @@ include_cookbook 'zoom'
 # Anyenv
 include_cookbook 'anyenv'
 include_cookbook 'nodenv'
-include_cookbook 'rbenv'
 include_cookbook 'tfenv'
 
 # Other
 include_cookbook 'uv'
+include_cookbook 'rv'

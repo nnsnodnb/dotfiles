@@ -33,6 +33,12 @@ if command -v uv &>/dev/null; then
   eval "$(uv generate-shell-completion zsh)"
 fi
 
+# rv
+if command -v rv &>/dev/null; then
+  eval "$(${HOME}/.local/bin/rv shell init zsh)"
+  eval "$(${HOME}/.local/bin/rv shell completions zsh)"
+fi
+
 # Alias
 alias reload="source ~/.zshrc"
 
