@@ -2,7 +2,7 @@
 
 set -eux
 
-mitamae_version="2.0.5"
+mitamae_version="2.0.6"
 mitamae_cache="mitamae-${mitamae_version}"
 
 if [[ -f "bin/${mitamae_cache}" ]]; then
